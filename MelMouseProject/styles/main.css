@@ -1,0 +1,125 @@
+﻿/* Reset
+------------------------------------------------------------ */
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body {background:#ffffff; font-size: 12px; color: #666666; font-family:Century Gothic }
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}	
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
+	}
+	
+/* Structure */
+#wrapper {
+	
+	width: 96%;	
+	max-width: 920px;
+	margin: auto;
+	padding: 2%;
+	} 
+
+	#main {
+	font-size: 12px;
+		width: 60%;
+		margin-right: 5%;
+		float: left;
+		}		
+		
+	aside {
+		width: 35%;
+		float: right;
+		}
+
+/* Logo H1 */
+header h1 {
+	height: 76px;
+	width: 300px;
+	float: left;
+	display: block;
+	background: url(../images/UCSD.jpg) 0 0 no-repeat;
+	text-indent: -9999px;
+	}
+		
+/* Nav */
+header nav {
+	float: right;
+	margin-top: 40px; 
+	}
+	
+	header nav li {
+		display: inline;
+		margin-left: 15px;
+		}
+
+#skipTo {
+	display: none;
+	}
+	#skipTo li {
+		background: #b1fffc;
+		}
+
+/* Banner */			
+#banner {
+	float: left;
+	margin-bottom: 15px;
+	width: 100%;
+	}
+
+	#banner img {
+	padding-top:10px;
+		width: 100%;
+		}
+
+.attr1{width: 30%;float:left; padding-top:1%; padding-bottom:1%;
+	}
+	
+.attr2{
+	width: 65%;  float:left; padding-top:1%;padding-bottom:1%;
+}
+h3{
+	color:gray;
+	border-bottom:1px #999999 solid;
+}
+/* Media Queries */
+@media screen and (max-width: 480px) {
+
+	#skipTo {
+		display: block;
+		}
+	
+	header nav, #main, aside {
+		float: left;
+		clear: left;
+		margin: 0 0 10px; 
+		width: 100%;
+		}	
+		header nav li {
+			margin: 0;
+			background: #efefef;
+			display: block;
+			margin-bottom: 3px;
+			}
+			header nav a {
+				display: block;
+				padding: 10px;
+				text-align: center;
+				}			
+}
+.error {
+    font-weight: bold;
+    color: red;
+    font-style: italic;
+}
+.align-right {
+    text-align: right;
+}
+.align-center{
+    text-align: center;
+    vertical-align: middle;
+}
